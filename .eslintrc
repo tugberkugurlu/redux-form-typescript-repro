@@ -1,0 +1,58 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "brace-style": [2, "stroustrup", { 
+            "allowSingleLine": true 
+        }],
+        "quotes": [2, "single"],
+        "no-var": 2,
+        "no-const-assign": 2,
+        "no-debugger": 2,
+        "no-duplicate-imports": 2,
+        "prefer-const": 2,
+        "no-unreachable": 2,
+        "object-curly-spacing": [2, "always", {
+            "arraysInObjects": true
+        }],
+        "semi": [2, "always"],
+        "jsx-quotes": [2, "prefer-double"],
+        "react/jsx-curly-spacing": [2, "never"],
+        "react/jsx-key": 2,
+        "react/jsx-uses-vars": 2,
+
+        "curly": 1,
+        "no-console": 1,
+        "no-unused-vars": 1,
+        "react/display-name": [ 1, {"ignoreTranspilerName": false }],
+        "react/jsx-no-bind": 1,
+        "react/jsx-no-duplicate-props": 1,
+        "react/jsx-pascal-case": 1,
+        "react/jsx-uses-react": 1,
+        "react/no-danger": 1,
+        "react/no-did-mount-set-state": 1,
+        "react/no-did-update-set-state": 1,
+        "react/no-direct-mutation-state": 1,
+        "react/no-unknown-property": 1,
+        "react/prop-types": 1,
+        "react/react-in-jsx-scope": 1,
+        "react/self-closing-comp": [1, {
+            "html": false
+        }],
+
+        "react/jsx-no-literals": 0
+    }
+}

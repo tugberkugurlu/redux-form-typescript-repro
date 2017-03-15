@@ -1,0 +1,25 @@
+{
+    "extends": [
+        "tslint-eslint-rules"
+    ],
+    "rules": {
+        "brace-style": [true, "stroustrup", {
+            "allowSingleLine": true
+        }],
+        "object-curly-spacing": [true, "always"],
+        "curly": true,
+        "ordered-imports": [true, {
+            "import-sources-order": "lowercase-last", 
+            "named-imports-order": "lowercase-first"
+        }],
+        "quotemark": [true, "single", "jsx-double"],
+        "no-debugger": true,
+        "no-unused-variable": true,
+        "no-var-keyword": true,
+        "prefer-const": true,
+        "semicolon": [true, "always"],
+        "ter-prefer-arrow-callback": [true, {
+            "allowNamedFunctions": true
+        }]
+    }
+}

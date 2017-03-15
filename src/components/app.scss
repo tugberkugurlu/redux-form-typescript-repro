@@ -1,0 +1,47 @@
+$containerPadding: 15px;
+
+.header--primary {
+    background-color: #373737;
+
+    .header--primary__app-logo-container {
+        background-color: #c00;
+        padding: 22.5px 20px;
+        margin-right: 10px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            font-style: italic;
+            vertical-align: middle;
+            margin: 7.5px 0 12.5px 0;
+        }
+    }
+
+    .header--primary__app-name-container {
+        padding-left: 20px;
+        padding-left: 1.25rem;
+        padding-right: 20px;
+        padding-right: 1.25rem;
+        font-size: 21px;
+        font-size: 1.3125rem;
+        line-height: 31px;
+        line-height: 62px;
+        color: #fff;
+        display: inline-block;
+        white-space: nowrap;
+    }
+}
+
+div[role=main] {
+    padding: $containerPadding;
+}
+
+footer {
+    background-color: #373737;
+    color: #fff;
+    padding: $containerPadding;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
