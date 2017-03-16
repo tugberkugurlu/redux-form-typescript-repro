@@ -11,13 +11,13 @@ const Hello: React.StatelessComponent<HelloProps> = ({ to }) => <div>
 class Home extends React.Component<{}, {}> {
     render(): JSX.Element {
         return <div>
-            <p>
+            <div>
                 <Hello to="World" />
-            </p>
+            </div>
 
-            <p>
+            <div>
                 This is the home page!
-            </p>
+            </div>
         </div>;
     }
 }
