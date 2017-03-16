@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router';
 import '../css/honeycomb.scss';
 import './app.scss';
 const AppLogo = require('../images/gatebase-white.svg');
@@ -8,12 +9,12 @@ class App extends React.Component<{}, {}> {
         return <div>
             <div className="band header--primary">
                 <nav>
-                    <a href="#" className="header--primary__app-logo-container">
+                    <Link to="/" className="header--primary__app-logo-container">
                         <img src={AppLogo} className="js-svg" width="25" />
-                    </a>
-                    <a href="#" className="header--primary__app-name-container">
+                    </Link>
+                    <Link to="/" className="header--primary__app-name-container">
                         Redgate React Starter Kit
-                    </a>
+                    </Link>
                 </nav>
             </div>
 
