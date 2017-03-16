@@ -1,11 +1,9 @@
-type ApplicationStatus = 'Initial' | 
-    'Starting' | 
-    'Started' | 
-    'FailedToStart';
+import { ApplicationStatus } from '../ApplicationStatus';
 
 export interface AppState {
     readonly status: ApplicationStatus;
     readonly lastUpdatedOn: Date;
+    readonly errorReason?: string;
 }
 
 export interface State {
