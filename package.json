@@ -3,6 +3,26 @@
   "version": "0.0.0",
   "description": "React based SPA (Single-Page Application) starter kit which came out from experiences of a few product teams at Redgate",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-gate/redgate-react-starter-kit.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "redux",
+    "webpack",
+    "redux-form",
+    "linter",
+    "react-router",
+    "hmr"
+  ],
+  "author": "Redgate Software (https://github.com/red-gate/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/red-gate/redgate-react-starter-kit/issues"
+  },
+  "homepage": "https://github.com/red-gate/redgate-react-starter-kit#readme",
   "scripts": {
     "start": "node_modules\\.bin\\concurrently \"node dev-server.js\" \"npm run watch\"",
     "build": "node build.js",
