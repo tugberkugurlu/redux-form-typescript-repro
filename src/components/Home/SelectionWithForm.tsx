@@ -8,6 +8,15 @@ interface FormData {
 
 const validate = (values: Readonly<FormData>): FormErrors<FormData> => { 
     const errors: FormErrors<FormData> = {};
+    
+    if(values.name === undefined) {
+        errors.name = 'name needed';
+    }
+
+    if(values.lastname === undefined) {
+        errors.lastname = 'name needed';
+    }
+
     return errors;
 };
 
@@ -20,8 +29,13 @@ class SelectionWithForm extends React.Component<FormProps<FormData, {}, {}> & Se
     render(): JSX.Element {
         return <div>
             <div>
-                <Field name="name" component="input" />
-                <Field name="lastname" component="input" />
+                <Field placeholder="First name" name="name" component="input" />
+                <Field placeholder="Last name" name="lastname" component="input" />
+                <div>
+                    <button className="button button--primary" type="button" onClick={this.props.handleSubmit}>
+                        Provide full name
+                    </button>
+                </div>
             </div>
         </div>;
     }
@@ -31,6 +45,7 @@ export default reduxForm<Readonly<FormData>, SelectionWithFormProps, {}>({
     form: 'SelectionWithForm',
     validate: validate,
     onSubmit: (values, dispatch, props) => {
+        console.log('submit is being handled...');
         props.onChange(values.name + ' ' + values.lastname);
     }
 })(SelectionWithForm);
