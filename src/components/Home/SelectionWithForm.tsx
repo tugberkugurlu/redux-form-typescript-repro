@@ -8,13 +8,13 @@ interface FormData {
 
 const validate = (values: Readonly<FormData>): FormErrors<FormData> => { 
     const errors: FormErrors<FormData> = {};
-    
+
     if(values.name === undefined) {
         errors.name = 'name needed';
     }
 
     if(values.lastname === undefined) {
-        errors.lastname = 'name needed';
+        errors.lastname = 'lastname needed';
     }
 
     return errors;
