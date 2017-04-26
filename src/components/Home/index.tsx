@@ -1,4 +1,5 @@
 import * as React from 'react';
+import MainForm from './MainForm';
 
 interface HelloProps {
     readonly to: string;
@@ -17,6 +18,10 @@ class Home extends React.Component<{}, {}> {
 
             <div>
                 This is the home page!
+            </div>
+
+            <div>
+                <MainForm />
             </div>
         </div>;
     }
